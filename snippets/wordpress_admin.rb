@@ -36,7 +36,7 @@ snippet 'change_admin_footer()' do |s|
   s.expression += ' <?php echo '' . get_option( \'blogname\' ); ?>.</p>\';
   }
 add_filter(\'admin_footer_text\', \'change_admin_footer\');'
-
+end
 
 
 # Change the 'Post' menu item name
