@@ -12,7 +12,7 @@ Sample description
 END
 
   # uncomment with the url to the git repo if one exists
-  # bundle.repository = 'git@github.com:username/repo-name.git'
+  bundle.repository = 'git@github.com:datenfips/wordpress-fz.ruble.git'
 
   # Use Commands > Bundle Development > Insert Bundle Section > Menu
   # to easily add new sections

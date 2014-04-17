@@ -1,43 +1,6 @@
 !!com.aptana.scripting.model.BundleElement
 author: My Name
 children:
-- !!com.aptana.scripting.model.MenuElement
-  children:
-  - children: &id001 []
-    commandName: Swap Case
-    customProperties: null
-    displayName: Swap Case
-    path: bundle.rb
-    scope: null
-  - children: *id001
-    commandName: Sample Snippet
-    customProperties: null
-    displayName: Sample Snippet
-    path: bundle.rb
-    scope: null
-  - children: *id001
-    commandName: '-'
-    customProperties: null
-    displayName: '-'
-    path: bundle.rb
-    scope: null
-  - children:
-    - children: *id001
-      commandName: Sample Snippet
-      customProperties: null
-      displayName: Sample Snippet
-      path: bundle.rb
-      scope: null
-    commandName: Sub Menu
-    customProperties: null
-    displayName: Sub Menu
-    path: bundle.rb
-    scope: null
-  commandName: wordpress-fz.ruble
-  customProperties: null
-  displayName: wordpress-fz.ruble
-  path: bundle.rb
-  scope: null
 - !!com.aptana.scripting.model.CommandElement
   async: false
   customProperties: null
@@ -79,13 +42,50 @@ children:
   path: snippets/snippets.rb
   runType: current_thread
   scope: null
-  tags: *id001
+  tags: &id001 []
   workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.MenuElement
+  children:
+  - children: *id001
+    commandName: Swap Case
+    customProperties: null
+    displayName: Swap Case
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: Sample Snippet
+    customProperties: null
+    displayName: Sample Snippet
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: '-'
+    customProperties: null
+    displayName: '-'
+    path: bundle.rb
+    scope: null
+  - children:
+    - children: *id001
+      commandName: Sample Snippet
+      customProperties: null
+      displayName: Sample Snippet
+      path: bundle.rb
+      scope: null
+    commandName: Sub Menu
+    customProperties: null
+    displayName: Sub Menu
+    path: bundle.rb
+    scope: null
+  commandName: wordpress-fz.ruble
+  customProperties: null
+  displayName: wordpress-fz.ruble
+  path: bundle.rb
+  scope: null
 - !!com.aptana.scripting.model.TemplateElement
   async: false
   customProperties: null
-  displayName: Sample File Template
-  filetype: '*.txt'
+  displayName: WP Custom Admin Functions
+  filetype: '*.php'
   input: []
   inputPath: null
   keyBindingMap: null
@@ -95,18 +95,6 @@ children:
   runType: current_thread
   scope: null
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.ProjectTemplateElement
-  customProperties: {replace_parameters: true}
-  description: A basic template which includes only a default index.html file
-  displayName: Sample Project Template
-  icon: null
-  id: Sample Project Template
-  location: templates/sample_project_template.zip
-  path: templates/templates.rb
-  priority: 0
-  scope: null
-  tags: *id001
-  type: WEB
 copyright: '(c) Copyright 2011 sample.org. Distributed under MIT license.
 
   '
@@ -124,5 +112,5 @@ increaseIndentMarkers: *id002
 license: null
 licenseUrl: null
 path: bundle.rb
-repository: null
+repository: git@github.com:datenfips/wordpress-fz.ruble.git
 visible: true
