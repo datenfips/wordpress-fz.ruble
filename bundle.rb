@@ -20,8 +20,15 @@ END
     menu.command 'Swap Case'
     menu.command 'Sample Snippet'
     menu.separator
-    menu.menu 'Sub Menu' do |sub_menu|
-        sub_menu.command 'Sample Snippet'
+    menu.menu 'Admin Functions' do |sub_menu|
+        sub_menu.command 'change_post_menu_label()'
+        sub_menu.command 'change_post_object_labels()'
+        sub_menu.command 'remove_restricted_menus()'
+        sub_menu.command 'remove_dashboard_widgets()'
+        sub_menu.separator
+        sub_menu.command 'change_login_logo()'
+        sub_menu.command 'change_admin_footer()'
+        sub_menu.command 'disable_auto_updates()'
     end
   end
 end
